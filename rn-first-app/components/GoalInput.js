@@ -10,6 +10,8 @@ const GoalInput = props => {
         setEnteredGoal(enteredText)
     };
 
+
+    //Clears the text input after adding a goal.
     const addGoalHandler = () => {
         props.onAddGoal(enteredGoal);
         setEnteredGoal('');
