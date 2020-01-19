@@ -21,6 +21,7 @@ export default function App() {
     setIsAddMode(false);
   };
 
+  // Removes Goals when touched.
   const removeGoalHandler = goalId => {
     console.log('TO BE DELETED: ' + goalId )
     console.log(courseGoals)
@@ -29,6 +30,7 @@ export default function App() {
     });
   };
 
+  //Exits goal adding screen
   const cancelHandler = () => {
     setIsAddMode(false);
   }
